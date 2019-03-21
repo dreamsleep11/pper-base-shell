@@ -10,10 +10,10 @@ module.exports = {
     port: 8888,
     publicPath: baseUrl, // 和 baseUrl 保持一致,
     proxy: {
-      '/epro': {
-        target: 'https://epro.test.viewchain.net/epro',
+      '/test': {
+        target: 'https://www.test.com',
         pathRewrite: {
-          '^/epro': ''
+          '^/test': ''
         },
         changeOrigin: true
       }

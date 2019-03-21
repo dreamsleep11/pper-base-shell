@@ -1,4 +1,4 @@
-import kernal from '../../pper-vue-kernal/index'
+import kernal from 'pper-vue-kernal/index'
 import pperBaseBox from '../../pper-base-box'
 export default {
   init() {
