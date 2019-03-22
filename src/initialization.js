@@ -10,6 +10,7 @@ export default {
      *装载核心
      */
     kernal.load(this.options)
+    console.info(kernal)
   },
   options: {
     indexName: 'home', // 初始加载路由名称

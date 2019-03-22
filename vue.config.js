@@ -10,10 +10,10 @@ module.exports = {
     port: 8888,
     publicPath: baseUrl, // 和 baseUrl 保持一致,
     proxy: {
-      '/test': {
-        target: 'https://www.test.com',
+      '/': {
+        target: 'https://test.com/',
         pathRewrite: {
-          '^/test': ''
+          '^/': ''
         },
         changeOrigin: true
       }
