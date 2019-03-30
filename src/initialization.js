@@ -13,7 +13,7 @@ export default {
     console.info(kernal)
   },
   options: {
-    indexName: 'home', // 初始加载路由名称
+    indexName: 'pper-base-box-home', // 初始加载路由名称
     boxs: [{ box: pperBaseBox, layout: undefined }], // 注册模块
     /**
      * 网络请求拦截器
