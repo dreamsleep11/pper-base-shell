@@ -13,7 +13,7 @@ export default {
     console.info(kernal)
   },
   options: {
-    indexName: 'pper-base-box-home', // 初始加载路由名称
+    indexName: pperBaseBox.entrance.home.tag, // 初始加载路由名称
     boxs: [{ box: pperBaseBox, layout: undefined }], // 注册模块
     /**
      * 网络请求拦截器
@@ -34,6 +34,6 @@ export default {
    * 注册模块链路
    */
   makeWormhole() {
-    kernal.makeWormhole(pperBaseBox.nameSpace, pperBaseBox.utter.test, '/about')
+    kernal.makeWormhole(pperBaseBox.utter.test, pperBaseBox.entrance.about)
   }
 }
