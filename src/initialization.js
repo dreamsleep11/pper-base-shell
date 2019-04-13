@@ -34,6 +34,6 @@ export default {
    * 注册模块链路
    */
   makeWormhole() {
-    kernal.makeWormhole(pperBaseBox.utter.test, pperBaseBox.entrance.about)
+    kernal.makeWormhole(pperBaseBox.outter.test, pperBaseBox.entrance.about)
   }
 }
