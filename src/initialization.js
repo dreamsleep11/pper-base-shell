@@ -19,13 +19,22 @@ export default {
      * 网络请求拦截器
      */
     interceptors: {
-      ajax: {
+      network: {
         response: response => {
           console.info(response)
           return response
         },
         request: config => {
           config.dddd = 'ddd'
+        }
+      },
+      router: {
+        before: function (to, from, next) {
+          console.info('before')
+          next()
+        },
+        after: function (to) {
+          console.info('after')
         }
       }
     }
